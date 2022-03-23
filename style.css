@@ -1,0 +1,112 @@
+:root {
+    --black: #0000;
+    --white: #ffffff;
+    --blue: #00B0D7;
+    --darkBlue: #001B2F;
+    --mediumBlue: #00223A;
+    --hoverBlue: #011f38;
+    --red: #FF6060;
+    --gray: #555;
+}
+
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+}    
+
+body {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+}
+
+.calculator {
+    width: 320px;
+    height: 568px;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    display: flex;
+    border-radius: 20px;
+    background-color: var(--mediumBlue);
+    box-shadow: 5px 5px 5px var(--gray);
+    
+}
+
+.bars {
+    background-color: var(--black);
+    width: 320px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px 20px 0px 0px;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute; 
+    padding: 0 10px;                           
+}
+
+.display {
+    height: 150px;
+    width: 320px;
+    margin-top: 44px;
+    color: var(--white);
+    font-size: 32px;
+    text-align: right;
+    padding: 10px;
+    word-wrap: break-word;
+    z-index: 1;
+}
+
+.keyboard {
+    width: 100%;
+    background-color: var(--darkBlue);
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    margin-top: 170px;
+    padding: 10px;
+    align-items: center;
+}
+
+table td {
+    display: inline-block;
+}
+
+.keyboard-button {
+    background-color: var(--darkBlue);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border: none;
+    width: 68px;
+    height: 68px;
+    font-size: 25px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    z-index: 1;
+
+}
+
+.keyboard-button:hover {
+    background-color: var(--hoverBlue);
+}    
+
+.red-buttom {
+    color: var(--red);
+}
+
+.blue-buttom {
+    color: var(--blue);
+}
+
+/* .bars-end {
+    display: flex;
+    border-bottom: 1px solid #C4C4C4;
+    margin-top: 560px;
+} */
